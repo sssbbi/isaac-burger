@@ -1,0 +1,143 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+  <head>
+    <?
+    $P_dp1 = '2';
+    include "../include/meta.html" ?>
+    <link rel="stylesheet" href="../assets/css/sub.min.css" />
+  </head>
+  <body class="main-body brand">
+    <? include "../include/header.html" ?>
+
+    <main class="main" id="contents">
+      <section class="section brand-kitchen wowrap">
+        <div class="container text-center text-white">
+          <h1 class="common-title--h1 font-weight-extrabold text-sub mb-5 wow fadeInUp">
+            가장 특별한 일상식<br class="d-block d-md-none" />
+            이삭버거 키친 이야기
+          </h1>
+          <h3 class="common-title--h3 font-weight-medium text-sub wow fadeInUp">
+            평범한 나날 속 가장 특별한 일상식을 전하는<br />
+            이삭버거의 키친을 소개합니다.
+          </h3>
+
+          <div class="line wow fadeInUp"></div>
+
+          <h4 class="common-title--h4 font-weight-medium text-sub wow fadeInUp">
+            한 발짝 가까이 다가오면 우리의 입맛을 돋우는 이삭버거가<br class="d-none d-xs-block" />
+            그릴에서 만들어지는 모습을 볼 수 있어요.<br />
+            <br />
+            마음을 채우는 든든한 한 끼를 위해 좋은 음식을 정성 들여 제공하는<br class="d-none d-sm-block" />
+            일상의 즐겁고 특별한 식<span class="text-main">食</span> 경험!<br />
+            이삭버거의 이웃이 되신 것을 환영합니다!
+          </h4>
+        </div>
+      </section>
+
+      <section class="section brand-promise wowrap">
+        <div class="container text-center">
+          <div class="text-sub text-color-1 mb-14">
+            <h2 class="common-title--h2 font-weight-normal mb-2 wow fadeInUp">특별한 일상식 버거를 만드는</h2>
+            <h1 class="common-title--h1 font-weight-extrabold wow fadeInUp">이삭버거의 세 가지 약속!</h1>
+          </div>
+
+          <div class="promise-list row mx-n3 mx-xxl-n6">
+            <div class="promise-list__item col-12 col-lg-4 px-3 px-xxl-6 wow fadeInUp">
+              <div class="circle-box">
+                <div class="text-box">
+                  <h3 class="common-title--h3 text-sub mb-4">
+                    <span class="text-color-1">하나,</span> 본질에 집중하는<br />
+                    제대로 된 음식을 만듭니다.
+                  </h3>
+                  <p class="common-text text-gray-5">
+                    이삭버거는 이삭 자체 제조 공장과 물류 시스템을<br />
+                    통해 신선한 식자재를 공수합니다.<br />
+                    당일 생산 당일 판매를 원칙으로<br />
+                    제대로 된 버거를 만들겠습니다!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="promise-list__item col-12 col-lg-4 mt-8 mt-lg-0 px-3 px-xxl-6 wow fadeInDown">
+              <div class="circle-box">
+                <div class="text-box">
+                  <h3 class="common-title--h3 text-sub mb-4">
+                    <span class="text-color-1">둘,</span> 가족을 위해 요리 하듯<br />
+                    진정성을 담아 완성합니다.
+                  </h3>
+                  <p class="common-text text-gray-5">
+                    위생적인 환경에서<br />
+                    음식 하나하나에 정성을 담아<br />
+                    언제나 믿고 먹을 수 있는<br />
+                    수준 높은 식 경험을 전하겠습니다!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="promise-list__item col-12 col-lg-4 mt-8 mt-lg-0 px-3 px-xxl-6 wow fadeInUp">
+              <div class="circle-box">
+                <div class="text-box">
+                  <h3 class="common-title--h3 text-sub mb-4">
+                    <span class="text-color-1">셋,</span> 하루 중 가장<br />
+                    따뜻한 시간을 선사합니다.
+                  </h3>
+                  <p class="common-text text-gray-5">
+                    이삭버거에게 모든 고객은 이웃입니다.<br />
+                    따뜻하게 응대하여 맛있는 음식과 함께<br />
+                    편안하게 즐기다 가실 수 있도록 여러분에 대한<br />
+                    따뜻한 마음가짐을 지켜나가겠습니다!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">The most special burger near your daily life</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <? include "../include/footer.html" ?>
+    <? include "../include/js.html" ?>
+    <script>
+      if ($(window).width() > 1024) {
+        var textSwiper = new Swiper('.text-slider .swiper-container', {
+          //slidesPerView: 0.6,
+          slidesPerView: 'auto',
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+            delay: 0,
+          },
+          speed: 50000,
+        });
+      }
+
+      function hColorChange() {
+        var offsetT = $('.brand-promise').offset().top,
+          headerH = $('.header').outerHeight(),
+          scrT = $(window).scrollTop();
+
+        if (scrT > offsetT - headerH) {
+          $('.header .nav .depth-1 > a').css('color', '#111');
+        } else {
+          $('.header .nav .depth-1 > a').css('color', '#fff');
+        }
+      }
+
+      $(document).ready(function () {
+        hColorChange();
+      });
+      $(window).scroll(function () {
+        hColorChange();
+      });
+    </script>
+  </body>
+</html>

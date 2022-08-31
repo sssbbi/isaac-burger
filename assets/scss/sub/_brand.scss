@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+.brand {
+  .header .nav {
+    .depth-1 > a {
+      color: $white;
+    }
+  }
+
+  .section {
+    height: 100vh;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+
+      > * {
+        width: 100%;
+      }
+    }
+    @include mdq-max(lg) {
+      height: auto;
+      .container {
+        display: block;
+        height: auto;
+        > * {
+          width: auto;
+        }
+      }
+    }
+  }
+
+  &-kitchen {
+    background: url(../images/sub/brand_section1_bg.jpg) no-repeat center;
+    background-size: cover;
+
+    @include mdq-max(lg) {
+      padding-top: em(160);
+      padding-bottom: em(160);
+    }
+    @include mdq-max(sm) {
+      padding-top: em(130);
+      padding-bottom: em(130);
+    }
+
+    .line {
+      width: em(60) !important;
+      height: 1px;
+      display: block;
+      margin: em(40) auto;
+      background: $white;
+    }
+
+    * {
+      text-shadow: 3px 3px 10px rgba($black, 0.3);
+    }
+  }
+
+  &-promise {
+    position: relative;
+    overflow: hidden;
+
+    @include mdq-max(lg) {
+      padding-top: em(120);
+      padding-bottom: em(120);
+    }
+    @include mdq-max(sm) {
+      padding-top: em(100);
+      padding-bottom: em(100);
+    }
+
+    .promise-list {
+      &__item {
+        text-align: center;
+
+        .circle-box {
+          background: #f8f8f2;
+          border-radius: 50%;
+          width: 100%;
+          height: 0;
+          padding-bottom: 100%;
+          position: relative;
+        }
+        .text-box {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          padding: em(20);
+        }
+      }
+
+      @include mdq-min(lg) {
+        @include mdq-max(xxl) {
+          .common-title--h3 {
+            font-size: 2vw;
+          }
+        }
+      }
+      @include mdq-min(lg) {
+        @include mdq-max(xl) {
+          .common-text {
+            font-size: 1.3vw;
+          }
+        }
+      }
+      @include mdq-max(lg) {
+        justify-content: center;
+        align-items: center;
+        //flex-direction: column;
+        &__item {
+          flex: 1 0 94%;
+          width: 94%;
+          max-width: 450px;
+          .circle-box {
+          }
+        }
+      }
+    }
+
+    .text-slider {
+      //content: 'The most special burger near your daily life';
+      font-family: 'Montserrat', serif;
+      font-size: rem(110);
+      font-weight: 800;
+      color: #f5f5f5;
+      position: absolute;
+      left: 0;
+      bottom: rem(-15);
+      line-height: 1;
+      text-transform: uppercase;
+      // display: block;
+      //white-space: nowrap;
+      .swiper-slide {
+        max-width: none;
+        width: 3100px !important;
+        //white-space: nowrap;
+      }
+      @include mdq-max(lg) {
+        display: none;
+      }
+    }
+  }
+}

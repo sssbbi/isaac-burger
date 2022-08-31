@@ -1,0 +1,819 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+  <head>
+    <?
+    $P_dp0 = 'main';
+    include "../include/meta.html" 
+    ?>
+    <link rel="stylesheet" href="../assets/css/main.min.css" />
+  </head>
+  <body class="main-body">
+    <? include "../include/header.html" ?>
+
+    <main class="main" id="contents">
+      <div id="fullpage">
+        <!-- S : section - visual -->
+        <section class="section section--1 main-visual wowrap">
+          <div class="main-visual-slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <!-- pc size - 1920 x 940 -->
+                <img class="d-none d-lg-block" src="../assets/images/main/main_visual_1.jpg" alt="메인 비주얼 이미지" />
+                <!-- mobile size - 1440 x 2280 -->
+                <img class="d-lg-none" src="../assets/images/main/m_main_visual_1.jpg" alt="메인 비주얼 이미지" />
+              </div>
+              <div class="swiper-slide">
+                <!-- pc size - 1920 x 940 -->
+                <img class="d-none d-lg-block" src="../assets/images/main/main_visual_2.jpg" alt="메인 비주얼 이미지" />
+                <!-- mobile size - 1440 x 2280 -->
+                <img class="d-lg-none" src="../assets/images/main/m_main_visual_2.jpg" alt="메인 비주얼 이미지" />
+              </div>
+              <div class="swiper-slide">
+                <!-- pc size - 1920 x 940 -->
+                <img class="d-none d-lg-block" src="../assets/images/main/main_visual_3.jpg" alt="메인 비주얼 이미지" />
+                <!-- mobile size - 1440 x 2280 -->
+                <img class="d-lg-none" src="../assets/images/main/m_main_visual_3.jpg" alt="메인 비주얼 이미지" />
+              </div>
+            </div>
+
+            <div class="main-visual-text">
+              <h1 class="title wow fadeInUp">
+                <img src="../assets/images/main/section1_title.png" alt="Our Burger Kitchen" />
+              </h1>
+              <h4 class="description text-sub font-weight-medium wow fadeInUp">
+                당신의 일상 가까이 가장 특별한 버거<br />
+                당신을 위한 특별한 일상식
+              </h4>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <button type="button" class="swiper-button swiper-button--prev">
+              <img src="../assets/images/main/arrow_prev.png" alt="prev" />
+            </button>
+            <button type="button" class="swiper-button swiper-button--next">
+              <img src="../assets/images/main/arrow_next.png" alt="next" />
+            </button>
+          </div>
+        </section>
+        <!-- E : section - visual -->
+
+        <!-- S : section - story -->
+        <section class="section section--2 main-story wowrap">
+          <div class="container container--wide">
+            <div class="story-title-box">
+              <h2 class="main-title--en text-white mb-10 mb-lg-22 wow fadeInUp">STORY</h2>
+
+              <h1 class="story-title mb-8 mb-md-12 wow fadeInUp">
+                <img src="../assets/images/main/section2_title.png" alt="Our Burger Kitchen" />
+              </h1>
+              <h5 class="main-text text-sub font-weight-medium wow fadeInUp">
+                이삭버거는 좋은 음식으로 마음을 채운다는<br />
+                이삭의 다짐을 이어갑니다.
+              </h5>
+
+              <div class="story-slider-button d-none d-lg-block wow fadeInUp">
+                <button type="button" class="swiper-button swiper-button--prev xi-angle-left-thin"></button>
+                <button type="button" class="swiper-button swiper-button--next xi-angle-right-thin"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="story-slider">
+            <div class="swiper-container wow fadeInUp">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="inner">
+                    <div class="img-box">
+                      <img src="../assets/images/main/story_img_1.jpg" alt="이삭 버거" />
+                    </div>
+                    <div class="hover-box">
+                      <p class="title">일상 가까이 제대로된 식사</p>
+                      <p class="text">
+                        이삭버거는 좋은 음식으로 마음을 채운다는 이삭의 다짐을 이어가고자 시작했어요.<br />
+                        이삭버거는 일상 가까이 제대로된 식사로 당신의 마음을 채우는 버거 브랜드입니다!
+                      </p>
+
+                      <button type="button" class="close-button xi-close" title="Close"></button>
+                    </div>
+
+                    <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="inner">
+                    <div class="img-box">
+                      <img src="../assets/images/main/story_img_2.jpg" alt="이삭 버거" />
+                    </div>
+                    <div class="hover-box">
+                      <p class="title">버거 한 입의 특별함!</p>
+                      <p class="text">신선하고 건강한 재료와 그릴에서 어니언 스매쉬드로 즉석에서 구워낸 시그니처 패티, 다양한 풍미의 소스 등을 정성껏 준비하여 더 특별한 이삭만의 홈메이드 버거를 드려요!</p>
+
+                      <button type="button" class="close-button xi-close" title="Close"></button>
+                    </div>
+
+                    <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="inner">
+                    <div class="img-box">
+                      <img src="../assets/images/main/story_img_3.jpg" alt="이삭 버거" />
+                    </div>
+                    <div class="hover-box">
+                      <p class="title">마음 한 켠 든든한 즐거움!</p>
+                      <p class="text">
+                        이삭버거는 작은 것 하나에도 마음을 다합니다.<br class="d-none d-xl-block" />
+                        키친의 구성원은 까다로운 원칙과 엄격한 기준으로 특별한 한끼로 최상의 맛을 유지합니다.<br class="d-none d-xl-block" />
+                        고객의 소중한 식사를 위해 세심히 배려하여 일상 한 켠의 즐거운 식食 경험을 선사해요!
+                      </p>
+
+                      <button type="button" class="close-button xi-close" title="Close"></button>
+                    </div>
+
+                    <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="story-slider-button d-lg-none">
+                <button type="button" class="swiper-button swiper-button--prev xi-angle-left-thin"></button>
+                <button type="button" class="swiper-button swiper-button--next xi-angle-right-thin"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">The most special burger near your daily life</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- E : section - story -->
+
+        <!-- S : section - video -->
+        <section class="section section--3 main-video">
+          <div class="container">
+            <div class="embed-responsive embed-responsive-16by9">
+              <!-- <video class="video" autoplay="" playsinline="" controls="" loop="">
+                <source src="../assets/video/video.mp4" type="video/mp4" />
+              </video> -->
+              <iframe width="" height="" src="https://www.youtube.com/embed/n0u3KMWj-pY?start=1&rel=0&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </section>
+        <!-- E : section - video -->
+
+        <!-- S : section - menu -->
+        <section class="section section--4 main-menu">
+          <div class="slide slide--1 bg-menu wowrap">
+            <div class="slide--1-title d-none d-lg-block text-white">
+              <img class="wow fadeInUp" src="../assets/images/main/section4_title.png" alt="Our burger Kitchen" />
+              <h3 class="main-title--en text-sub font-weight-medium border-0 d-block mt-9 wow fadeInUp">당신을 위한 특별한 일상식</h3>
+            </div>
+            <div class="slide--1-title d-lg-none text-white pt-10">
+              <img class="wow fadeInUp" src="../assets/images/main/section1_title.png" alt="Our burger Kitchen" />
+              <!-- <img  src="../assets/images/main/m_menu_bg.jpg" alt="our burger kitchen. 당신을 위한 특별한 일상식." /> -->
+
+              <h1 class="main-title text-sub font-weight-medium mt-8 mt-md-12 wow fadeInUp">당신을 위한 특별한 일상식</h1>
+            </div>
+
+            <a href="javascript:void(0);" class="menu-slide-btn wow fadeIn">
+              <div class="menu-slide__img">
+                <img src="../assets/images/main/menu_slide_btn.png" alt="burger" />
+              </div>
+              <p class="menu-slide__text">MENU</p>
+              <span class="xi xi-arrow-right"></span>
+            </a>
+          </div>
+          <div class="slide slide--2 bg-light wowrap">
+            <div class="container container--wide">
+              <div class="tab tab--box position-relative" data-tab="true" data-tab-active="on" data-tab-index="0" data-tab-mode="js">
+                <h2 class="main-title--en wow fadeInUp">MENU</h2>
+
+                <div class="tab-header mb-10 mb-lg-22 wow fadeInUp" data-tab-header="">
+                  <div class="tab-item">
+                    <a class="link" data-tab-item="">Burger</a>
+                  </div>
+                  <div class="tab-item">
+                    <a class="link" data-tab-item="">Melt</a>
+                  </div>
+                  <div class="tab-item">
+                    <a class="link" data-tab-item="">Side</a>
+                  </div>
+                </div>
+
+                <div class="tab-body" data-tab-body="">
+                  <!-- S : tab-content (Burger) -->
+                  <div class="tab-content wow fadeInUp" data-tab-content="">
+                    <div class="menu-title">
+                      <h1 class="title title--1 mb-5 mb-md-8">
+                        <img src="../assets/images/main/menu_title_1.png" width="214" alt="Burger" />
+                      </h1>
+                      <p class="main-text--small text-gray-5">
+                        고소하고 쫄깃한 식감의 포테이토 번으로 당일 공수한 신선한 채소,<br />
+                        시그니처 어니언 비프 패티 그리고 특색 있는 소스들이 <br />
+                        더해져 제대로된 한 끼이자 특별한 일상식 버거를 선보입니다.
+                      </p>
+
+                      <div class="menu-slider-button">
+                        <button type="button" class="swiper-button swiper-button--prev xi-angle-left-thin"></button>
+                        <button type="button" class="swiper-button swiper-button--next xi-angle-right-thin"></button>
+                      </div>
+                    </div>
+
+                    <div class="menu-slider">
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="inner">
+                              <div class="img-box">
+                                <img src="../assets/images/main/menu_img.png" alt="이삭시그니처버거" />
+                              </div>
+                              <div class="hover-box">
+                                <p class="menu__name">이삭시그니처버거</p>
+                                <p class="menu__name--en">Isaac signature burger</p>
+                                <p class="menu__description">
+                                  부드러운 식감의 브리오슈번, 육즙 가득한 어니언패티,<br />
+                                  바삭한 베이컨과 신선한 토마토와 양배추, 은은한<br />
+                                  스모크향의 특제소스로 맛을 낸 이삭 시그니처버거.
+                                </p>
+
+                                <button type="button" class="close-button xi-close" title="Close"></button>
+                              </div>
+                              <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="inner">
+                              <div class="img-box">
+                                <img src="../images/board/no_img.jpg" alt="menu name" />
+                              </div>
+                              <div class="hover-box">
+                                <p class="menu__name">메뉴명 노출</p>
+                                <p class="menu__name--en">메뉴 영문명 노출</p>
+                                <p class="menu__description">
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출
+                                </p>
+
+                                <button type="button" class="close-button xi-close" title="Close"></button>
+                              </div>
+                              <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="inner">
+                              <div class="img-box">
+                                <img src="../images/board/no_img.jpg" alt="menu name" />
+                              </div>
+                              <div class="hover-box">
+                                <p class="menu__name">메뉴명 노출</p>
+                                <p class="menu__name--en">메뉴 영문명 노출</p>
+                                <p class="menu__description">
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출
+                                </p>
+
+                                <button type="button" class="close-button xi-close" title="Close"></button>
+                              </div>
+                              <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="inner">
+                              <div class="img-box">
+                                <img src="../images/board/no_img.jpg" alt="menu name" />
+                              </div>
+                              <div class="hover-box">
+                                <p class="menu__name">메뉴명 노출</p>
+                                <p class="menu__name--en">메뉴 영문명 노출</p>
+                                <p class="menu__description">
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출
+                                </p>
+
+                                <button type="button" class="close-button xi-close" title="Close"></button>
+                              </div>
+                              <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="inner">
+                              <div class="img-box">
+                                <img src="../images/board/no_img.jpg" alt="menu name" />
+                              </div>
+                              <div class="hover-box">
+                                <p class="menu__name">메뉴명 노출</p>
+                                <p class="menu__name--en">메뉴 영문명 노출</p>
+                                <p class="menu__description">
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출
+                                </p>
+
+                                <button type="button" class="close-button xi-close" title="Close"></button>
+                              </div>
+                              <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- E : tab-content (Burger) -->
+
+                  <!-- S : tab- content (Melt)-->
+                  <div class="tab-content" data-tab-content="">
+                    <div class="menu-title">
+                      <h1 class="title mb-8">
+                        <img src="../assets/images/main/menu_title_2.png" width="142" alt="Melt" />
+                      </h1>
+                      <p class="main-text--small text-gray-5">
+                        버거와 샌드위치의 하이브리드, 멜트.<br />
+                        멜트는 1940년대 버거의 본고장 미국에서 탄생한, 버거와<br />
+                        샌드위치의 하이브리드에요. 최근 10년 사이 미국의 젊은 셰프들에<br />
+                        의해 가장 활발히 재창조되고 있는 버거이기도 하죠.<br />
+                        이삭버거는 바삭하면서 부드럽게 구워낸 토스트에 시그니처 패티와<br />
+                        치즈, 칠리 소스 등을 결합하여 한국인의 입맛에 맞게 해석된<br />
+                        새로운 멜트를 선사합니다.
+                      </p>
+
+                      <div class="menu-slider-button">
+                        <button type="button" class="swiper-button swiper-button--prev xi-angle-left-thin"></button>
+                        <button type="button" class="swiper-button swiper-button--next xi-angle-right-thin"></button>
+                      </div>
+                    </div>
+
+                    <div class="menu-slider">
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="inner">
+                              <div class="img-box">
+                                <img src="../assets/images/main/menu_img2.png" alt="Cheese Melt" />
+                              </div>
+                              <div class="hover-box">
+                                <p class="menu__name">치즈멜트</p>
+                                <p class="menu__name--en">Cheese Melt</p>
+                                <p class="menu__description">
+                                  어니언패티에 볶은양송이버섯과 특제 머쉬룸소스를 넣어<br />
+                                  고소하고 진한 버섯의 풍미가 특징.
+                                </p>
+
+                                <button type="button" class="close-button xi-close" title="Close"></button>
+                              </div>
+                              <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="inner">
+                              <div class="img-box">
+                                <img src="../images/board/no_img.jpg" alt="menu name" />
+                              </div>
+                              <div class="hover-box">
+                                <p class="menu__name">메뉴명 노출</p>
+                                <p class="menu__name--en">메뉴 영문명 노출</p>
+                                <p class="menu__description">
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출
+                                </p>
+
+                                <button type="button" class="close-button xi-close" title="Close"></button>
+                              </div>
+                              <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="inner">
+                              <div class="img-box">
+                                <img src="../images/board/no_img.jpg" alt="menu name" />
+                              </div>
+                              <div class="hover-box">
+                                <p class="menu__name">메뉴명 노출</p>
+                                <p class="menu__name--en">메뉴 영문명 노출</p>
+                                <p class="menu__description">
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출
+                                </p>
+
+                                <button type="button" class="close-button xi-close" title="Close"></button>
+                              </div>
+                              <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- E : tab- content (Melt)-->
+
+                  <!-- S : tab- content (Side)-->
+                  <div class="tab-content" data-tab-content="">
+                    <div class="menu-title">
+                      <h1 class="title mb-8">
+                        <img src="../assets/images/main/menu_title_3.png" width="136" alt="Melt" />
+                      </h1>
+                      <p class="main-text--small text-gray-5">
+                        사이드 메뉴 설명이 들어갑니다. 사이드 메뉴 설명이 들어갑니다.<br />
+                        사이드 메뉴 설명이 들어갑니다. 사이드 메뉴 설명이 들어갑니다.<br />
+                        사이드 메뉴 설명이 들어갑니다. 사이드 메뉴 설명이 들어갑니다.<br />
+                        사이드 메뉴 설명이 들어갑니다. 사이드 메뉴 설명이 들어갑니다.
+                      </p>
+
+                      <div class="menu-slider-button">
+                        <button type="button" class="swiper-button swiper-button--prev xi-angle-left-thin"></button>
+                        <button type="button" class="swiper-button swiper-button--next xi-angle-right-thin"></button>
+                      </div>
+                    </div>
+
+                    <div class="menu-slider">
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="inner">
+                              <div class="img-box">
+                                <img src="../images/board/no_img.jpg" alt="menu name" />
+                              </div>
+                              <div class="hover-box">
+                                <p class="menu__name">메뉴명 노출</p>
+                                <p class="menu__name--en">메뉴 영문명 노출</p>
+                                <p class="menu__description">
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출
+                                </p>
+
+                                <button type="button" class="close-button xi-close" title="Close"></button>
+                              </div>
+                              <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="inner">
+                              <div class="img-box">
+                                <img src="../images/board/no_img.jpg" alt="menu name" />
+                              </div>
+                              <div class="hover-box">
+                                <p class="menu__name">메뉴명 노출</p>
+                                <p class="menu__name--en">메뉴 영문명 노출</p>
+                                <p class="menu__description">
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출
+                                </p>
+
+                                <button type="button" class="close-button xi-close" title="Close"></button>
+                              </div>
+                              <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="inner">
+                              <div class="img-box">
+                                <img src="../images/board/no_img.jpg" alt="menu name" />
+                              </div>
+                              <div class="hover-box">
+                                <p class="menu__name">메뉴명 노출</p>
+                                <p class="menu__name--en">메뉴 영문명 노출</p>
+                                <p class="menu__description">
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출
+                                </p>
+
+                                <button type="button" class="close-button xi-close" title="Close"></button>
+                              </div>
+                              <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="inner">
+                              <div class="img-box">
+                                <img src="../images/board/no_img.jpg" alt="menu name" />
+                              </div>
+                              <div class="hover-box">
+                                <p class="menu__name">메뉴명 노출</p>
+                                <p class="menu__name--en">메뉴 영문명 노출</p>
+                                <p class="menu__description">
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출
+                                </p>
+
+                                <button type="button" class="close-button xi-close" title="Close"></button>
+                              </div>
+                              <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="inner">
+                              <div class="img-box">
+                                <img src="../images/board/no_img.jpg" alt="menu name" />
+                              </div>
+                              <div class="hover-box">
+                                <p class="menu__name">메뉴명 노출</p>
+                                <p class="menu__name--en">메뉴 영문명 노출</p>
+                                <p class="menu__description">
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출 메뉴 설명 노출<br />
+                                  메뉴 설명 노출 메뉴 설명 노출
+                                </p>
+
+                                <button type="button" class="close-button xi-close" title="Close"></button>
+                              </div>
+                              <button type="button" class="zoom-button"><i class="xi xi-search"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- E : tab- content (Side)-->
+                </div>
+              </div>
+
+              <button href="../pop/whole_menu.html" type="button" class="popup-link btn-type-04 whole-menu-button py-4 px-7 rounded-pill wow fadeInUp" title="전체 메뉴판 팝업열기">
+                <img class="mr-2" src="../assets/images/icon/whole_menu_icon.png" width="12" alt="menu" />
+                전체 메뉴판 보기
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- E : section - menu -->
+
+        <!-- S : section - character -->
+        <section class="section section--5 main-character wowrap">
+          <div class="container">
+            <h1 class="character-title text-center mb-7 mb-lg-22 wow fadeInUp">
+              <img src="../assets/images/main/section5_title.png" width="276" alt="Our Friends" />
+            </h1>
+            <h1 class="character-title2 text-center mb-20 d-lg-none wow fadeInUp">
+              <img src="../assets/images/main/section5_title2.png" width="524" alt="We are family!" />
+            </h1>
+
+            <div class="character-row">
+              <div class="character-penburg wow fadeInLeft">
+                <img src="../assets/images/main/penburg.png" width="310" alt="펭벅" />
+              </div>
+              <div class="character-slogan text-center wow fadeInUp">
+                <h1 class="character-title2 mb-10 d-none d-lg-block">
+                  <img src="../assets/images/main/section5_title2.png" width="524" alt="We are family!" />
+                </h1>
+                <h2 class="main-title mb-5">남극에서 온 버거매니어 펭벅</h2>
+                <p class="text-gray-6">
+                  펭벅은 호스트, 가이드와 함께 이삭버거를 책임지는 이삭키친의 당당한 일원이에요.<br />
+                  본업인 물고기 잡기에는 조금 취약하지만 버거에 관해서라면 모르는게 없죠. 평소에는 까칠한 예민보스,<br />
+                  버거 이야기만 나오면 다정다감한 설명꾼이 되는 반전매력의 소유자예요.
+                </p>
+              </div>
+              <div class="character-info wow fadeInRight">
+                <div class="my-6 my-md-3 row no-gutters align-items-center">
+                  <div class="col-12 col-md-auto character-info__img">
+                    <img src="../assets/images/main/character_bunz.png" alt="bunz" />
+                  </div>
+                  <div class="col-12 col-md character-info__text">맛있는 음식을 먹는 순간이 가장 행복한 번즈 그 중에서도 버거를 가장 좋아해서 자연스레 펭벅과 둘도 없는 친구가 되었죠.</div>
+                </div>
+                <div class="my-6 my-md-3 row no-gutters align-items-center">
+                  <div class="col-12 col-md-auto character-info__img">
+                    <img src="../assets/images/main/character_patti.png" alt="patti" />
+                  </div>
+                  <div class="col-12 col-md character-info__text">
+                    패티 인생에 대충이란 없다!<br />
+                    뭐든지 열심히하고 남을 도와주길 좋아하는 마음씨에 버거 삼형제의 실질적인 리더예요.
+                  </div>
+                </div>
+                <div class="my-6 my-md-3 row no-gutters align-items-center">
+                  <div class="col-12 col-md-auto character-info__img">
+                    <img src="../assets/images/main/character_oni.png" alt="oni" />
+                  </div>
+                  <div class="col-12 col-md character-info__text">
+                    끊임없는 질문으로 설명꾼.<br />
+                    펭벅조차 넉다운 시키곤 해요. 호기심이 많아서 자신이 커서 어떤 양파가 될지 항상 궁금해 하죠.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- E : section - character -->
+
+        <!-- S : section - footer -->
+        <section class="section main-footer fp-auto-height">
+          <? include "../include/footer.html" ?>
+        </section>
+        <!-- E : section - footer -->
+      </div>
+    </main>
+
+    <? include "../include/js.html" ?>
+    <script>
+      // 풀페이지
+      var myFullpage = new fullpage('#fullpage', {
+        licenseKey: 'F67168A3-4AB64A38-A211B922-2DB1C3AC',
+        menu: '#fullpage-nav',
+        anchors: ['INTRO', 'STORY', 'VIDEO', 'MENU', 'CHARACTER', 'FOOTER'],
+        autoScrolling: true,
+        //scrollOverflow: true,
+        fitToSection: true,
+        normalScrollElements: '.popup.whole-menu',
+        responsiveWidth: 1025,
+        scrollingSpeed: 1000,
+        touchSensitivity: 100,
+        afterLoad: function (origin, destination, direction) {
+          if ($('.main-story, .main-video, .main-menu').hasClass('active')) {
+            $('.header').addClass('header-white');
+          } else {
+            $('.header').removeClass('header-white');
+          }
+
+          if ($('.main-visual, .main-story, .main-video, .main-menu').hasClass('active')) {
+            $('.header .nav, .nav-mobile__btn').addClass('nav-white');
+          } else {
+            $('.header .nav, .nav-mobile__btn').removeClass('nav-white');
+          }
+
+          /*
+          var video = $(".main-video .video").get(0);
+          if ($('.main-video').hasClass('active')) {
+            video.play();
+          } else {
+            video.pause();
+          }
+					*/
+
+          if ($('.main-character').hasClass('active')) {
+            $('.header').addClass('header-color');
+          } else {
+            $('.header').removeClass('header-color');
+          }
+
+          $('.section').each(function () {
+            if ($(this).hasClass('active')) {
+              $(this).find('.wow.fadeInUp').addClass('animated').css({
+                visibility: 'visible',
+                'animation-name': 'fadeInUp',
+              });
+              $(this).find('.wow.fadeInLeft').addClass('animated').css({
+                visibility: 'visible',
+                'animation-name': 'fadeInLeft',
+              });
+              $(this).find('.wow.fadeInRight').addClass('animated').css({
+                visibility: 'visible',
+                'animation-name': 'fadeInRight',
+              });
+              $(this).find('.wow.fadeIn').addClass('animated').css({
+                visibility: 'visible',
+                'animation-name': 'fadeIn',
+              });
+            }
+          });
+        },
+        afterSlideLoad: function (section, origin, destination, direction) {
+          if ($('.main-menu .slide--1').hasClass('active')) {
+            $('.header').addClass('header-white');
+            $('.header .nav, .nav-mobile__btn').addClass('nav-white');
+          }
+          if ($('.main-menu .slide--2').hasClass('active')) {
+            $('.header').removeClass('header-white');
+            $('.header .nav, .nav-mobile__btn').removeClass('nav-white');
+          }
+
+          $('.slide').each(function () {
+            if ($(this).hasClass('active')) {
+              $(this).find('.wow.fadeInUp').addClass('animated').css({
+                visibility: 'visible',
+                'animation-name': 'fadeInUp',
+              });
+              $(this).find('.wow.fadeInLeft').addClass('animated').css({
+                visibility: 'visible',
+                'animation-name': 'fadeInLeft',
+              });
+              $(this).find('.wow.fadeInRight').addClass('animated').css({
+                visibility: 'visible',
+                'animation-name': 'fadeInRight',
+              });
+              $(this).find('.wow.fadeIn').addClass('animated').css({
+                visibility: 'visible',
+                'animation-name': 'fadeIn',
+              });
+            }
+          });
+        },
+      });
+
+      var mvSwiper = new Swiper('.main-visual-slider', {
+        effect: 'fade',
+        fadeEffect: {
+          crossFade: true,
+        },
+        loop: true,
+        speed: 700,
+        autoplay: {
+          delay: 5000,
+        },
+        pagination: {
+          el: '.main-visual-slider .swiper-pagination',
+          type: 'bullets',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.main-visual-slider .swiper-button--next',
+          prevEl: '.main-visual-slider .swiper-button--prev',
+        },
+      });
+
+      var storySwiper = new Swiper('.story-slider .swiper-container', {
+        slidesPerView: 2.35,
+        //spaceBetween: 60,
+        loop: false,
+        speed: 1000,
+        navigation: {
+          nextEl: '.story-title-box .swiper-button--next',
+          prevEl: '.story-title-box .swiper-button--prev',
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            navigation: {
+              nextEl: '.story-slider .swiper-button--next',
+              prevEl: '.story-slider .swiper-button--prev',
+            },
+          },
+          1025: {
+            slidesPerView: 1.8,
+          },
+          1301: {
+            slidesPerView: 2.1,
+          },
+          1601: {
+            slidesPerView: 2.35,
+          },
+        },
+      });
+
+      if ($(window).width() > 1024) {
+        var textSwiper = new Swiper('.text-slider .swiper-container', {
+          //slidesPerView: 0.6,
+          slidesPerView: 'auto',
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+            delay: 0,
+          },
+          speed: 50000,
+        });
+      }
+
+      $('.menu-slide-btn').on('click', function () {
+        myFullpage.moveSlideRight();
+      });
+
+      $('.swiper-slide .zoom-button').on('click', function () {
+        //$('.swiper-slide .inner').removeClass('active');
+        $(this).parents('.swiper-slide').children('.inner').addClass('active');
+      });
+      $('.swiper-slide .close-button').on('click', function () {
+        $(this).parents('.swiper-slide').children('.inner').removeClass('active');
+      });
+
+      $('.menu-slider-button').each(function (index) {
+        $(this).addClass('menu-slider-button--' + index);
+      });
+      $('.menu-slider').each(function (index) {
+        $(this).addClass('menu-slider--' + index);
+
+        var menuSwiper = new Swiper('.menu-slider--' + index + ' .swiper-container', {
+          slidesPerView: 2,
+          speed: 1000,
+          loop: false,
+          navigation: {
+            nextEl: '.menu-slider-button--' + index + ' .swiper-button--next',
+            prevEl: '.menu-slider-button--' + index + ' .swiper-button--prev',
+          },
+          breakpoints: {
+            0: {
+              slidesPerView: 1,
+            },
+            1025: {
+              slidesPerView: 1.6,
+            },
+            1201: {
+              slidesPerView: 1.8,
+            },
+            1401: {
+              slidesPerView: 2,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.container {
+  &--wide {
+    max-width: 1760px !important;
+  }
+}
+
+.sub-main {
+  padding: em(60) 0 em(120);
+  min-height: em(300);
+}

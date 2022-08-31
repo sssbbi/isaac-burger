@@ -1,0 +1,155 @@
+@charset "UTF-8";
+$header-fix: true; //헤더fix
+
+.header {
+  width: 100%;
+  z-index: 500;
+  height: $nav-height;
+  @if ($header-fix == true) {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  @at-root .sub-body .header {
+    background-color: $white;
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  @include mdq-max(lg) {
+    height: $nav-height-lg;
+
+    @at-root .main-body .header {
+      top: em(10);
+    }
+  }
+
+  .header-wrap {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+
+    .logo {
+      flex: 0 0 em(83);
+      max-width: em(83);
+
+      &--white {
+        display: none;
+      }
+    }
+
+    .sns {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      margin: 0 rem(-4);
+      &__link {
+        display: block;
+        width: em(50);
+        margin: 0 rem(4);
+
+        .icon {
+          display: none;
+          &--color {
+            display: block;
+          }
+        }
+        @include mdq-max(lg) {
+          .icon {
+            display: none;
+            &--black {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    @include mdq-max(xl) {
+      .logo {
+        flex: 0 0 em(70);
+        max-width: em(70);
+      }
+
+      .sns {
+        &__link {
+          width: em(45);
+        }
+      }
+    }
+
+    @include mdq-max(lg) {
+      .logo {
+        flex: 0 0 em(55);
+        max-width: em(55);
+      }
+
+      .sns {
+        right: 60px;
+        &__link {
+          width: em(40);
+        }
+      }
+    }
+  }
+
+  &.header-white {
+    .header-wrap {
+      .logo {
+        &--color {
+          display: none;
+        }
+        &--white {
+          display: block;
+        }
+      }
+
+      .icon {
+        &--color,
+        &--black {
+          display: none;
+        }
+        &--white {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @include mdq-max(lg) {
+    &.header-color {
+      .header-wrap {
+        .logo {
+          &--white {
+            display: none;
+          }
+          &--color {
+            display: block;
+          }
+        }
+
+        .icon {
+          &--white,
+          &--black {
+            display: none;
+          }
+          &--color {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sub-body {
+  @if ($header-fix == true) {
+    padding-top: $nav-height;
+    @include mdq-max(lg) {
+      padding-top: $nav-height-lg;
+    }
+  }
+}

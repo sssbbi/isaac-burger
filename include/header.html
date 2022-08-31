@@ -1,0 +1,55 @@
+<ul class="skip">
+  <li><a class="link" href="#contents">본문내용 바로가기</a></li>
+  <li><a class="link" href="#header">헤더 바로가기</a></li>
+  <li><a class="link" href="#footer">푸터 바로가기</a></li>
+</ul>
+
+<header id="header" class="header">
+  <div class="container container--wide header-wrap">
+    <a href="../main/main.html" class="logo" title="메인으로">
+      <img class="logo--color" src="../assets/images/main/logo.png" alt="<?=$SS[sitename]?>" />
+      <img class="logo--white" src="../assets/images/main/logo_white.png" alt="<?=$SS[sitename]?>" />
+    </a>
+
+    <nav class="nav">
+      <? include "../include/nav.html" ?>
+    </nav>
+
+    <div class="sns">
+      <a href="<?=$P_sns_youtube?>" target="_blank" class="sns__link" title="youtube">
+        <img class="icon icon--color" src="../assets/images/icon/sns_youtube.png" alt="youtube" />
+        <img class="icon icon--black" src="../assets/images/icon/sns_youtube_black.png" alt="youtube" />
+        <img class="icon icon--white" src="../assets/images/icon/sns_youtube_white.png" alt="youtube" />
+      </a>
+      <a href="<?=$P_sns_facebook?>" class="sns__link" title="facebook">
+        <img class="icon icon--color" src="../assets/images/icon/sns_facebook.png" alt="facebook" />
+        <img class="icon icon--black" src="../assets/images/icon/sns_facebook_black.png" alt="facebook" />
+        <img class="icon icon--white" src="../assets/images/icon/sns_facebook_white.png" alt="facebook" />
+      </a>
+      <a href="<?=$P_sns_instagram?>" class="sns__link" title="instagram">
+        <img class="icon icon--color" src="../assets/images/icon/sns_instagram.png" alt="instagram" />
+        <img class="icon icon--black" src="../assets/images/icon/sns_instagram_black.png" alt="instagram" />
+        <img class="icon icon--white" src="../assets/images/icon/sns_instagram_white.png" alt="instagram" />
+      </a>
+      <a href="<?=$P_sns_blog?>" class="sns__link" title="blog">
+        <img class="icon icon--color" src="../assets/images/icon/sns_blog.png" alt="blog" />
+        <img class="icon icon--black" src="../assets/images/icon/sns_blog_black.png" alt="blog" />
+        <img class="icon icon--white" src="../assets/images/icon/sns_blog_white.png" alt="blog" />
+      </a>
+    </div>
+
+    <button class="nav-mobile__btn" type="button">
+      <i class="xi-bars"></i>
+    </button>
+  </div>
+</header>
+
+<!-- S : mobile navigation -->
+<? include "../include/aside.html" ?>
+<!-- E : mobile navigation -->
+
+<!-- S : loading image -->
+<div class="loading-image">
+  <img src="../assets/images/icon/loading.svg" alt="" />
+</div>
+<!-- E : loading image -->

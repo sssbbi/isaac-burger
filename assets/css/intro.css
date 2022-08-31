@@ -1,0 +1,594 @@
+.text-truncate-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-truncate-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  height: 3em;
+}
+
+.text-truncate-3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  height: 4.5em;
+}
+
+.text-truncate-4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  height: 6em;
+}
+
+.text-truncate-5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  height: 7.5em;
+}
+
+@media (min-width: 320.02px) {
+  .text-truncate-xxs-1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .text-truncate-xxs-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 3em;
+  }
+
+  .text-truncate-xxs-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 4.5em;
+  }
+
+  .text-truncate-xxs-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 6em;
+  }
+
+  .text-truncate-xxs-5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 7.5em;
+  }
+}
+@media (min-width: 375.02px) {
+  .text-truncate-xs-1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .text-truncate-xs-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 3em;
+  }
+
+  .text-truncate-xs-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 4.5em;
+  }
+
+  .text-truncate-xs-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 6em;
+  }
+
+  .text-truncate-xs-5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 7.5em;
+  }
+}
+@media (min-width: 576.02px) {
+  .text-truncate-sm-1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .text-truncate-sm-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 3em;
+  }
+
+  .text-truncate-sm-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 4.5em;
+  }
+
+  .text-truncate-sm-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 6em;
+  }
+
+  .text-truncate-sm-5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 7.5em;
+  }
+}
+@media (min-width: 768.02px) {
+  .text-truncate-md-1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .text-truncate-md-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 3em;
+  }
+
+  .text-truncate-md-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 4.5em;
+  }
+
+  .text-truncate-md-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 6em;
+  }
+
+  .text-truncate-md-5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 7.5em;
+  }
+}
+@media (min-width: 1024.02px) {
+  .text-truncate-lg-1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .text-truncate-lg-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 3em;
+  }
+
+  .text-truncate-lg-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 4.5em;
+  }
+
+  .text-truncate-lg-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 6em;
+  }
+
+  .text-truncate-lg-5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 7.5em;
+  }
+}
+@media (min-width: 1200.02px) {
+  .text-truncate-xl-1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .text-truncate-xl-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 3em;
+  }
+
+  .text-truncate-xl-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 4.5em;
+  }
+
+  .text-truncate-xl-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 6em;
+  }
+
+  .text-truncate-xl-5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 7.5em;
+  }
+}
+@media (min-width: 1400.02px) {
+  .text-truncate-xxl-1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .text-truncate-xxl-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 3em;
+  }
+
+  .text-truncate-xxl-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 4.5em;
+  }
+
+  .text-truncate-xxl-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 6em;
+  }
+
+  .text-truncate-xxl-5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 7.5em;
+  }
+}
+@media (min-width: 1600.02px) {
+  .text-truncate-xxxl-1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .text-truncate-xxxl-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 3em;
+  }
+
+  .text-truncate-xxxl-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 4.5em;
+  }
+
+  .text-truncate-xxxl-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 6em;
+  }
+
+  .text-truncate-xxxl-5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    height: 7.5em;
+  }
+}
+/* Made by Masstige */
+.imgToCover {
+  /* background-cover */
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.imgToCover::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.imgToCover > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 1000%;
+  min-height: 1000%;
+  max-width: none;
+  max-height: none;
+  transform: translate(-50%, -50%) scale(0.1);
+}
+
+.imgToContain {
+  /* background-contain */
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.imgToContain::after {
+  content: "";
+  display: block;
+  padding-bottom: contain;
+}
+.imgToContain > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 0;
+  min-height: 0;
+  max-width: 100%;
+  max-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.intro {
+  background: url(../images/intro/intro_bg.jpg) repeat center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro .main {
+  width: 100%;
+  max-width: 1080px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.intro .main .link-box .inner {
+  display: block;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+.intro .main .link-box .inner > img {
+  transition: transform 0.4s ease;
+}
+.intro .main .link-box .inner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.3;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+@media screen and (min-width: 1024.02px) {
+  .intro .main .link-box .inner:hover > img {
+    transform: scale(1.1);
+  }
+  .intro .main .link-box .inner:hover::before {
+    opacity: 0.1;
+  }
+}
+.intro .main .link-box__text {
+  position: absolute;
+  left: 3.125em;
+  bottom: 3.125em;
+  z-index: 2;
+}
+@media screen and (max-width: 1024px) {
+  .intro .main .link-box__text {
+    left: 1.875em;
+    bottom: 1.875em;
+    max-width: 55%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .intro .main .link-box .inner {
+    height: 34vh;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  .intro .main .link-box .inner::after {
+    content: "";
+    display: block;
+    padding-bottom: 70%;
+  }
+  .intro .main .link-box .inner > img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 1000%;
+    min-height: 1000%;
+    max-width: none;
+    max-height: none;
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+  .intro .main .link-box .inner::before {
+    display: none;
+  }
+}
+/*# sourceMappingURL=intro.css.map */

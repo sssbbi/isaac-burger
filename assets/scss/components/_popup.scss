@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/* 기본 팝업 */
+.popup {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: rem(40);
+  padding-bottom: 0;
+  background-color: #fff;
+
+  @include mdq-max(lg) {
+    padding-left: rem(25);
+    padding-right: rem(25);
+  }
+
+  &.popup--lg {
+    max-width: 1200px;
+  }
+
+  &.popup--sm {
+    max-width: 500px;
+  }
+
+  &__title {
+    font-size: em(26);
+    font-weight: 700;
+    line-height: 1;
+    img {
+      display: inline-block;
+      vertical-align: baseline;
+      margin-right: rem(4);
+      width: em(20, 26);
+    }
+  }
+
+  &-head {
+    position: relative;
+    .mfp-close {
+      font-size: em(30);
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $gray-1;
+    }
+  }
+
+  &-body {
+    //padding: rem(32);
+    //border-top: 1px solid #ddd;
+  }
+
+  &-footer {
+    padding-top: rem(20);
+    border-top: 1px solid #ddd;
+  }
+}
+
+.whole-menu {
+  .scrollbar-outer {
+    max-height: 75vh !important;
+    overflow-y: auto;
+    overflow-x: hidden !important;
+    .scroll-y {
+      background: none;
+    }
+    .scroll-x {
+      display: none !important;
+    }
+  }
+
+  .menu-list {
+    //margin-top: -30px;
+    &__item {
+      margin-bottom: 30px;
+      @include mdq-max(lg) {
+        margin-bottom: 15px;
+      }
+      .inner {
+        border: 1px solid $gray-d;
+        background: $white;
+        padding: em(30);
+        text-align: center;
+        height: 100%;
+
+        .img-box {
+          width: 100%;
+          max-width: 192px;
+          margin: 0 auto;
+          @include img-to-bg(100%, cover);
+        }
+        .txt-box {
+          padding: em(25) em(10) 0;
+        }
+        .menu-name {
+          font-size: em(22);
+          font-weight: 700;
+          &--en {
+            color: $gray-4;
+            font-family: $font-family-sub;
+            font-weight: 700;
+            margin-top: rem(12);
+          }
+        }
+        .menu-description {
+          color: $gray-5;
+          line-height: 1.6;
+          margin-top: rem(15);
+        }
+
+        @include mdq-max(lg) {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          text-align: left;
+          padding: em(20);
+          .img-box {
+            flex: 0 0 45%;
+            max-width: 180px;
+          }
+          .txt-box {
+            flex: 1 1 auto;
+            width: 1%;
+            padding: 0;
+            padding-left: em(15);
+          }
+          .menu-name {
+            font-size: em(19);
+            &--en {
+              font-size: em(15);
+              margin-top: rem(8);
+            }
+          }
+          .menu-description {
+            flex: 1 0 100%;
+            max-width: 100%;
+            margin-top: em(10);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 파일 다운로드 팝업 */
+.pop-file-download {
+  position: relative;
+  max-width: 500px;
+  max-height: 90vh;
+  background-color: #fff;
+  margin: 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: rem(30);
+
+  .pop-file-download__title {
+    font-size: em(20);
+    font-weight: 700;
+  }
+
+  .link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
